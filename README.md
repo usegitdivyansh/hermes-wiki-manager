@@ -10,6 +10,7 @@ When an intern posts an update in Slack #intern-updates, the agent automatically
 4. Appends to the History section (permanent audit trail)
 5. Saves raw Slack messages as immutable sources
 6. Updates the wiki index and action log
+7. Setting Cron job for effectively managing Memory and adding Context Layers.
 
 This is Andrej Karpathy's LLM Wiki pattern - knowledge is synthesised at write time, not query time. Pages stay clean as the wiki grows.
 
@@ -31,15 +32,11 @@ wiki/
 Traditional approach: All updates appended to one doc. Manager scans everything at query time.
 LLM Wiki pattern: Each intern owns a structured page. AI synthesises at write time. Manager asks what is Divyansh working on and gets an instant answer from the Summary. No scanning needed.
 
-## Assignment Context
-Built as part of the RealtyAI GenAI Internship (June-October 2026).
-- Week 1: Slack to Google Docs pipeline with Hermes agent
-- Week 2: Upgrade to Karpathy LLM Wiki pattern with per-intern markdown files
-
 ## Key Learnings
 - Hermes Agent's built-in llm-wiki skill implements the full Karpathy pattern out of the box
 - channel_prompts in config.yaml forces wiki routing for every message in a specific Slack channel
 - Knowledge synthesised at write time scales better than query-time synthesis as team size grows
+- Introducing Cron jobs which automatically analysis and edit Document at midnight reducing the Context window and making efficient memory consumptions
 
 ## Setup
 1. Install Hermes Agent: uv tool install hermes-agent
