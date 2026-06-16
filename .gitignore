@@ -1,0 +1,13 @@
+﻿# Secret files - NEVER push these
+.env
+*.env
+token.json
+credentials.json
+google-docs-credentials.json
+# Hermes internal files
+*.log
+__pycache__/
+*.pyc
+# System files
+.DS_Store
+Thumbs.db
