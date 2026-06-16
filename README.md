@@ -32,7 +32,7 @@ Traditional approach: All updates appended to one doc. Manager scans everything 
 LLM Wiki pattern: Each intern owns a structured page. AI synthesises at write time. Manager asks what is Divyansh working on and gets an instant answer from the Summary. No scanning needed.
 
 ## Assignment Context
-Built as part of the AIPlanet GenAI Internship (June-October 2026).
+Built as part of the RealtyAI GenAI Internship (June-October 2026).
 - Week 1: Slack to Google Docs pipeline with Hermes agent
 - Week 2: Upgrade to Karpathy LLM Wiki pattern with per-intern markdown files
 
